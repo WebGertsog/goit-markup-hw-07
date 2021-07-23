@@ -22,10 +22,32 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
 /* отзывчивые изображения */
 img {
   display: block;
@@ -840,10 +862,10 @@ img {
 
 .form-field {
   position: relative;
-  
+
   margin-bottom: 10px;
 }
-.form-field:nth-child(5){
+.form-field:nth-child(5) {
   margin-bottom: 20px;
 }
 
@@ -936,10 +958,9 @@ img {
   cursor: pointer;
 }
 .checkbox {
-
 }
 
-.checkbox:checked + .check-icon{
+.checkbox:checked + .check-icon {
   border: none;
   background-color: var(--accent-text-color);
   background-image: url(../images/svg/check-on.svg);
@@ -975,11 +996,11 @@ img {
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-sub-button:hover,
-.form-sub-button:focus{
+.form-sub-button:focus {
   background-color: var(--hover-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
