@@ -24,9 +24,25 @@ ol {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+.site-nav,
+.qualities-list,
+.direction-list,
+.team-list,
+.portfolio-buttons {
+  display: flex;
 }

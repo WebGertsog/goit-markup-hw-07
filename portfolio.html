@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -282,57 +282,68 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container main-footer">
-        <div class="footer-address">
-          <a class="logo footer-logo" lang="en" href="./index.html">
-            Web
-            <span class="logo-inverse-color">Studio</span>
-          </a>
-          <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="footer-list list">
-            <li class="footer-item">
-              <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-socials">
-          <p class="socials-text">Присоединяйтесь</p>
-          <ul class="socials-list list">
-            <li class="socials-item">
-              <a class="socials-link link" href="#">
-                <svg class="socials-icons">
-                  <use href="./images/svg/sprite.svg#icon-instagram"></use>
+      <div class=" container main-footer">
+          <div class="footer-address">
+              <a class="logo footer-logo" lang="en" href="./index.html">Web<span class="logo-inverse-color">Studio</span></a>
+              <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+              <ul class="footer-list list">
+                  <li class="footer-item">
+                      <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                  <li class="footer-item">
+                      <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-socials">
+              <p class="socials-text">Присоединяйтесь</p>
+              
+              <ul class="socials-list list">
+                  <li class="socials-item">
+                      <a class="socials-link link" href="#">
+                          <svg class="socials-icons">
+                              <use href="./images/svg/sprite.svg#icon-instagram"></use>
+                          </svg>
+                      </a>
+                  </li>
+                  <li class="socials-item">
+                      <a class="socials-link link" href="#">
+                          <svg class="socials-icons">
+                              <use href="./images/svg/sprite.svg#icon-twitter"></use>
+                          </svg>
+                      </a>
+                  </li>
+                  <li class="socials-item">
+                      <a class="socials-link link" href="#">
+                          <svg class="socials-icons">
+                              <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                          </svg>
+                      </a>
+                  </li>
+                  <li class="socials-item">
+                      <a class="socials-link link" href="#">
+                          <svg class="socials-icons">
+                              <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+                          </svg>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-form">
+            <p class="socials-text">Подпишитесь на рассылку</p>
+            <form class="subscribe-form" autocomplete="off">
+              <label class="visually-hidden" for="sub-email" alt="Подпишитесь на рассылку"></label>
+              <input class="subscribe-input" type="email" name="email" id="sub-email" placeholder="E-mail" required>
+              <button class="subscribe-button" type="submit" aria-label="Подписаться">
+                Подписаться
+                <svg class="icon-plane-send" width="24" height="24">
+                  <use href="./images/svg/sprite.svg#icon-plane-send"></use>>
                 </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a class="socials-link link" href="#">
-                <svg class="socials-icons">
-                  <use href="./images/svg/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a class="socials-link link" href="#">
-                <svg class="socials-icons">
-                  <use href="./images/svg/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a class="socials-link link" href="#">
-                <svg class="socials-icons">
-                  <use href="./images/svg/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+              </button>
+  
+            </form>
       </div>
-    </footer>
+  </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="close-button">
