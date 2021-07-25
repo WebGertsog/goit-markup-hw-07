@@ -1,17 +1,19 @@
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
 
-  .portfolio-buttons {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-
-     .filter-item + .filter-item {
-      margin-left: 8px;
+    &-buttons {
+      display: flex;
+      margin-bottom: 50px;
+      justify-content: center;
+  
+       .filter-item + .filter-item {
+        margin-left: 8px;
+      }
     }
   }
+
+  
   
   .buttons-filter {
     padding: 6px 22px;
