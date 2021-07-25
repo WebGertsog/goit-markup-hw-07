@@ -11,6 +11,15 @@
   
   .footer-address {
     margin-right: 70px;
+
+    .address {
+      margin-bottom: 9px;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      color: var(--main-bg-color);
+    }
   }
   
   .footer-logo {
@@ -18,24 +27,15 @@
     margin-bottom: 20px;
   }
   
-  .footer .logo-inverse-color {
+  .logo-inverse-color {
     color: var(--main-bg-color);
   }
-  
-  .footer .address {
-    margin-bottom: 9px;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--main-bg-color);
-  }
-  
-  .footer-list .footer-item:not(:last-child) {
+
+  .footer-item:not(:last-child) {
     margin-bottom: 9px;
   }
   
-  .footer-list .footer-contacts {
+  .footer-contacts {
     padding-top: 4px;
     padding-bottom: 4px;
     text-decoration: none;
@@ -44,9 +44,9 @@
     letter-spacing: 0.03em;
     color: var(--contacts-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .footer-list .footer-contacts:hover,
-  .footer-list .footer-contacts:focus {
-    color: var(--accent-text-color);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-text-color);
+      }
   }

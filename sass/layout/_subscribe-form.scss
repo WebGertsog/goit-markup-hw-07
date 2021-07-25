@@ -1,6 +1,7 @@
 .subscribe-form {
     display: flex;
   }
+
   .subscribe-input {
     width: 358px;
     height: 50px;
@@ -21,21 +22,22 @@
     background-color: transparent;
   
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .subscribe-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .subscribe-input:hover,
-  .subscribe-input:focus {
-    border-color: var(--accent-text-color);
-    color: var(--main-bg-color);
-    outline: none;
-  }
-  .subscribe-input:hover::placeholder,
-  .subscribe-input:focus::placeholder {
-    color: var(--accent-text-color);
+    
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+      &:hover,
+      &:focus {
+          border-color: var(--accent-text-color);
+          color: var(--main-bg-color);
+          outline: none;
+          
+            &::placeholder {
+                color: var(--accent-text-color);
+                }
+      }
   }
   
   .subscribe-button {
@@ -59,13 +61,14 @@
   
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+          background-color: var(--hover-btn-color);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
   }
   
-  .subscribe-button:hover,
-  .subscribe-button:focus {
-    background-color: var(--hover-btn-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
   .icon-plane-send {
     margin-left: 10px;
     fill: var(--main-bg-color);
