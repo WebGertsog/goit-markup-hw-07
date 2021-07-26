@@ -7,11 +7,34 @@
     align-items: center;
   }
   
-  .nav {
+  .menu {
     display: flex;
     align-items: center;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: var(--accent-text-color);
+    font-family: Raleway;
+    font-weight: var(--bold-font);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 
-    &-link {
+      &__color {
+        color: #000;
+      }
+  }
+  
+  .navigation {
+    display: flex;
+    margin-left: 93px;
+
+    &__item + &__item {
+      margin-left: 50px;
+    }
+
+    &__link {
       position: relative;
       display: block;
       padding-top: 32px;
@@ -28,29 +51,6 @@
         &:focus {
           color: var(--accent-text-color);
         }
-    }
-  }
-  
-  .logo {
-    text-decoration: none;
-    color: var(--accent-text-color);
-    font-family: Raleway;
-    font-weight: var(--bold-font);
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-
-      &-color {
-        color: #000;
-      }
-  }
-  
-  .site-nav {
-    display: flex;
-    margin-left: 93px;
-
-    .item + .item {
-      margin-left: 50px;
     }
   }
 
@@ -74,11 +74,15 @@
     display: flex;
     margin-left: auto;
 
-      .item + .item {
+      &__item {
+        display: flex;
+      }
+
+      &__item + &__item {
         margin-left: 50px;
       }
 
-      &-link {
+      &__link {
         display: flex;
         align-items: center;
         width: 100%;
@@ -98,11 +102,7 @@
           }
       }
 
-      &-item {
-        display: flex;
-      }
-      
-      &-icons {
+      &__icons {
         margin-right: 10px;
         fill: currentColor;
       }
