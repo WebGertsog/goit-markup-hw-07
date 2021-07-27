@@ -8,9 +8,7 @@
       align-items: baseline;
     }
     
-    &-address {
-      margin-right: 70px;
-  
+ 
       .address {
         margin-bottom: 9px;
         font-style: normal;
@@ -19,7 +17,7 @@
         letter-spacing: 0.03em;
         color: var(--main-bg-color);
       }
-    }
+    
     
     &-logo {
       display: inline-block;
@@ -46,7 +44,11 @@
         }
     }
   }
-  
+
+  .address-block {
+    margin-right: 70px;
+  }
+
 
 
   .logo-inverse-color {

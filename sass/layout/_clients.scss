@@ -1,12 +1,16 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-    
-    &-list {
-      display: flex;
-    }
+  }
 
-    &-link {
+  .clients-list {
+    display: flex;
+  }
+
+  .clients-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+  .clients-list__link {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -23,8 +27,3 @@
           border: 1px solid var(--accent-text-color);
         }
     }
-
-    &-item:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
